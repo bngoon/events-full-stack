@@ -1,10 +1,14 @@
 import { NavLink } from "react-router-dom"
 
 
-
 function Nav() {
   return (
-    <div>Nav</div>
+   <nav>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/events">Events</NavLink>
+    <NavLink to="/event-signup">Event Sign Up</NavLink>
+
+   </nav>
   )
 }
 
