@@ -34,14 +34,16 @@ export const editEvent = async (`/events/${eventName}`, eventData) => {
       const response = await api.get(eventName, eventData)
       return response.data;
   } catch (error) {
-    console.error(error);
+    console.error("Error editing event", error);
   }
 }
 
 export const deleteEvent = async (eventName) => {
   try {
     const response = await api.delete(`/events/${eventName}`)
+    return response.data;
   } catch (error) {
-    console.error(error)
+    console.error("Error deleting event", error)
+    throw error
   }
 }
