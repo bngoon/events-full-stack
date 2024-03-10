@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let apiUrll;
+let apiUrl;
 
 const apiUrls = {
     production: "www.event-crud-api.heroku.com/api",
@@ -12,6 +12,8 @@ if (window.location.hostname === "localhost") {
 } else {
     apiUrl = apiUrls.production;
 }
-const api = axios.creat ({
+const api = axios.create ({
     baseURL: apiUrl,
 })
+
+export default api;

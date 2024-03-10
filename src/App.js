@@ -17,11 +17,18 @@ function App() {
      <Route path='/' element={<Home/>}/>
      <Route path='/events' element={<Events/>}/>
      <Route path='/events/:name' element={<EventDetail/>}/>
-     <Route path='/' element={<EventCreate/>}/>
-     <Route path='/' element={<EventEdit/>}/>
+     <Route path='/add-event' element={<EventCreate/>}/>
+     <Route path='/events/:id/edit' element={<EventEdit/>}/>
      </Routes>
     </div>
   );
 }
 
 export default App;
+
+
+// GET	/api/event/	To find all the events going on
+// GET	/api/event/:eventName	To find one event by the name
+// POST	/api/event/	To create a event
+// PATCH	/api/event/:eventName	To edit the details of that specific event
+// DELETE	/api/event/:eventName	To delete a single event
