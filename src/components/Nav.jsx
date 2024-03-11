@@ -1,13 +1,16 @@
 import { NavLink } from "react-router-dom"
-
+import React from "react"
 
 function Nav() {
   return (
    <nav>
-    <NavLink to="/">Home </NavLink>
-    <NavLink to="/events">Events </NavLink>
-    <NavLink to="/event-create">Add Event</NavLink>
+    <ul>
+   <li> <NavLink to="/">Home </NavLink></li>
+   <li> <NavLink to="/events">Events </NavLink></li>
+    <li><NavLink to='/add-event'>Add Event</NavLink></li>
+   
 
+    </ul>
    </nav>
   )
 }

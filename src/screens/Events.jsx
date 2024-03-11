@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { getEvents } from "../services/events.js";
+import Event from '../components/Event.jsx'
+
 
 function Events() {
   const [events, setEvents] = useState([])
@@ -16,8 +19,13 @@ function Events() {
 
   return (
     <div>
-      <h1>All Events!</h1>
+      { <h1>Upcoming Events</h1> }
       <div className='events-container'>
+        {
+          events.map((event) => (
+            <Event event={event} key={event._id}/>
+          ))
+        }
     
       </div>
     </div>
@@ -25,3 +33,4 @@ function Events() {
 }
 
 export default Events
+

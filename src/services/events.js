@@ -29,21 +29,21 @@ export const createEvent = async (eventData) => {
   }
 };
 
-export const editEvent = async (`/events/${eventName}`, eventData) => {
+export const editEvent = async (eventName, eventData) => {
   try {
-      const response = await api.get(eventName, eventData)
-      return response.data;
+    const response = await api.put(`/events/${eventName}`, eventData);
+    return response.data;
   } catch (error) {
     console.error("Error editing event", error);
   }
-}
+};
 
 export const deleteEvent = async (eventName) => {
   try {
-    const response = await api.delete(`/events/${eventName}`)
+    const response = await api.delete(`/events/${eventName}`);
     return response.data;
   } catch (error) {
-    console.error("Error deleting event", error)
-    throw error
+    console.error("Error deleting event", error);
+    throw error;
   }
-}
+};
