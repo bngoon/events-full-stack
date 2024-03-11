@@ -10,7 +10,7 @@ function EventCreate() {
     eventType: "",
     address: "",
     description: " ",
-    borough: "",
+    borough: [""],
     neighborhood: "",
     websiteLink: ""
 })

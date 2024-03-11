@@ -1,31 +1,28 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './screens/Home.jsx';
-import Events from './screens/Events.jsx'
-import EventDetail from './screens/EventDetail.jsx'
-import EventCreate from './screens/EventCreate';
-import EventEdit from './screens/EventEdit';
-import Nav from "./components/Nav.jsx"
-
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./screens/Home.jsx";
+import Events from "./screens/Events.jsx";
+import EventDetail from "./screens/EventDetail.jsx";
+import EventCreate from "./screens/EventCreate";
+import EventEdit from "./screens/EventEdit";
+import Nav from "./components/Nav.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <Routes>
-     <Route path='/' element={<Home/>}/>
-     <Route path='/events' element={<Events/>}/>
-     <Route path='/events/:name' element={<EventDetail/>}/>
-     <Route path='/add-event' element={<EventCreate/>}/>
-     <Route path='/events/:id/edit' element={<EventEdit/>}/>
-     </Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/:name" element={<EventDetail />} />
+        <Route path="/add-event" element={<EventCreate />} />
+        <Route path="/events/:name/edit" element={<EventEdit />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
-
 
 // GET	/api/event/	To find all the events going on
 // GET	/api/event/:eventName	To find one event by the name

@@ -25,6 +25,7 @@ function EventDetail() {
   return (
     <div>
 <h1>{events.eventName}</h1>
+<p>{events.decscription}</p>
 
 <div>
         <Link to={`/events/${id}/edit`}>
