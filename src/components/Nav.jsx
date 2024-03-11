@@ -3,8 +3,10 @@ import React from "react"
 import "./Nav.css";
 function Nav() {
   return (
+    <div className="nav-container">
+    <h1>Welcome to NY Events</h1>
    <nav className="nav">
-    <ul>
+    <ul className="nav-ul">
    <li> <NavLink to="/">Home </NavLink></li>
    <li> <NavLink to="/events">Events </NavLink></li>
     <li><NavLink to='/add-event'>Add Event</NavLink></li>
@@ -12,6 +14,7 @@ function Nav() {
 
     </ul>
    </nav>
+   </div>
   )
 }
 

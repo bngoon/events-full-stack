@@ -7,8 +7,7 @@ function Event({event}) {
     <div>
         <Link to={`/events/${event.eventName}`}>
         <h2>{event.eventName} ({event.eventType})</h2>
-        {/* <p>Address: {event.address} Date: {event.date} </p>
-        <p>Description: {event.description}</p> */}
+       
       </Link>
     </div>
   )

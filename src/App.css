@@ -15,7 +15,27 @@
 }
 
 .home-container img {
-  width: 100vw; /* 100% of viewport width */
-  height: 100vh; /* 100% of viewport height */
-  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
 }
+
+
+button {
+  color: #999;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  background: #fff;
+  color: #1b1b1b;
+}
+
+

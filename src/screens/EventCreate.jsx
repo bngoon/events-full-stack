@@ -33,30 +33,20 @@ const handleChange = (e) => {
   }))
 };
 
-// const handleCheckboxChange = (e) => {
-//   const {eventName, checked} = e.target;
-
-//   setEvents((prevEvent)=> ({
-//     ...prevEvent,
-//     [eventName]: checked,
-//   }))
-// }
-
-
   return (
     <div>
       <h1>Add Event</h1>
       <form onSubmit={handleSubmit}>
         <input
         type='text'
-        placeholder="event"
+        placeholder="Event Name"
         name="eventName"
         value={events.eventName}
         onChange={handleChange}
         />
    <input
           type="text"
-          placeholder="date"
+          placeholder="Date"
           name="date"
           value={events.date}
           onChange={handleChange}
@@ -77,28 +67,28 @@ const handleChange = (e) => {
         />
            <input
           type="text"
-          placeholder="event description"
+          placeholder="type of event"
           name="description"
           value={events.description}
           onChange={handleChange}
         />
           <input
           type="text"
-          placeholder="borough"
+          placeholder="Borough"
           name="borough"
           value={events.borough}
           onChange={handleChange}
         />
           <input
           type="text"
-          placeholder="neighborhood"
+          placeholder="Neighborhood"
           name="neighborhood"
           value={events.neighborhood}
           onChange={handleChange}
         />
           <input
           type="text"
-          placeholder="website link"
+          placeholder="Website Url"
           name="websiteLink"
           value={events.websiteLink}
           onChange={handleChange}
