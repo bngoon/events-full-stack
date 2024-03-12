@@ -35,7 +35,8 @@ const handleChange = (e) => {
 
   return (
     <div>
-      <h1>Add Event</h1>
+      <div className='createevent-container'>
+      <h1>Add an Event!</h1>
       <form onSubmit={handleSubmit}>
         <input
         type='text'
@@ -95,6 +96,7 @@ const handleChange = (e) => {
         />
         <button type='submit'>Create Event!</button>
       </form>
+      </div>
     </div>
   )
 }
