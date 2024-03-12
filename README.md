@@ -40,38 +40,6 @@ Start the frontend development server.
 
 ```
 
-## API Reference
-
-#### Get all characters
-
-```http
-  GET localhost4002/api/characters
-```
-
-#### Get characters by Id
-
-```http
-  GET /api/characters/${id}
-```
-
-| Parameter | Type     | Description                            |
-| :-------- | :------- | :------------------------------------- |
-| `id`      | `string` | **Required**. Id of character to fetch |
-
-#### Get characters by Name
-
-```http
-  GET /api/characters/name/Zero-Tails
-```
-
-| Parameter | Type     | Description              |
-| :-------- | :------- | :----------------------- |
-| `name`    | `string` | Search Value: Zero-Tails |
-
-## Documentation
-
-This API was sourced from [narutodb](https://narutodb.xyz/).
-
 ## Authors
 
 - [@Bngoon](https://github.com/bngoon)
