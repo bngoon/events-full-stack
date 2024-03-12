@@ -6,6 +6,7 @@ import EventDetail from "./screens/EventDetail.jsx";
 import EventCreate from "./screens/EventCreate";
 import EventEdit from "./screens/EventEdit";
 import Nav from "./components/Nav.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/add-event" element={<EventCreate />} />
         <Route path="/events/edit" element={<EventEdit />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

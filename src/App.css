@@ -1,13 +1,14 @@
 .App {
   text-align: center;
+
 }
+
+
 
 .home-container {
   text-align: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ position: relative
+
 }
 
 .home-container h1 {
@@ -17,7 +18,7 @@
 .home-container img {
   width: 100vw; 
   height: 100vh; 
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 
@@ -39,3 +40,6 @@ button:hover {
 }
 
 
+p {
+  color: #c0c0c0;
+}
