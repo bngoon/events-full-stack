@@ -67,7 +67,7 @@ const handleChange = (e) => {
         />
            <input
           type="text"
-          placeholder="type of event"
+          placeholder="event type"
           name="description"
           value={events.description}
           onChange={handleChange}

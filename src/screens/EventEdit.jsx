@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { getEvent, editEvent } from "../services/events"
+
 function EventEdit() {
   const [events, setEvents] = useState({
     eventName: "",
@@ -13,11 +14,11 @@ function EventEdit() {
     websiteLink: ""
 })
 
-let {id} = useParams();
+let {eventName} = useParams();
 let navigate = useNavigate();
 
 async function fetchEvents() {
-  const oneEvent = await getEvent(id)
+  const oneEvent = await getEvent(eventName)
   setEvents(oneEvent)
 }
 useEffect(()=> {
@@ -27,8 +28,8 @@ useEffect(()=> {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  await editEvent(id, events);
-  navigate(`/events/${id}`)
+  await editEvent(eventName, events);
+  navigate(`/events/${eventName}`)
 
 }
 const handleChange = (e) => {

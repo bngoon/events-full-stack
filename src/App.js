@@ -17,7 +17,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/events/:name" element={<EventDetail />} />
         <Route path="/add-event" element={<EventCreate />} />
-        <Route path="/events/edit" element={<EventEdit />} />
+        <Route path="/events/:eventName/edit" element={<EventEdit />} />
       </Routes>
       <Footer />
     </div>
