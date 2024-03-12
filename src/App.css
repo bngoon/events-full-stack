@@ -1,14 +1,11 @@
 .App {
   text-align: center;
-
+  text-transform: capitalize;
 }
-
-
 
 .home-container {
   text-align: center;
- position: relative
-
+  position: relative;
 }
 
 .home-container h1 {
@@ -16,11 +13,10 @@
 }
 
 .home-container img {
-  width: 100vw; 
-  height: 100vh; 
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
-
 
 button {
   color: #999;
@@ -38,7 +34,6 @@ button:hover {
   background: #fff;
   color: #1b1b1b;
 }
-
 
 p {
   color: #c0c0c0;
