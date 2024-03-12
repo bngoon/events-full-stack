@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   text-transform: capitalize;
-  height: 100vh;
+}
+.landinghome {
+  color: lightgrey;
 }
 
 .home-container {
@@ -45,5 +47,13 @@ p {
 }
 
 .createevent-container {
-  padding: 0px 0px 325px;
+  padding: 0px 0px 300px;
+}
+
+.events-names {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
 }

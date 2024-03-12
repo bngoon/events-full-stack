@@ -99,7 +99,7 @@ function EventEdit() {
           value={events.websiteLink}
           onChange={handleChange}
         />
-        <button type="submit">Create Event!</button>
+        <button type="submit">Make Changes!</button>
       </form>
     </div>
   );

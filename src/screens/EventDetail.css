@@ -21,8 +21,19 @@
 
 .event-detail p {
   margin-bottom: 10px;
+  color: black;
 }
 
 .event-detail button {
   margin-right: 10px;
+}
+
+.button {
+  color: #999;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

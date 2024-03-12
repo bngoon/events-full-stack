@@ -4,7 +4,8 @@ import "./Nav.css";
 function Nav() {
   return (
     <div className="nav-container">
-    <h1>Welcome to NY Events</h1>
+    <h1 className="landinghome">Welcome to NY Events</h1>
+    <hr />
    <nav className="nav">
     <ul className="nav-ul">
    <li> <NavLink to="/">Home </NavLink></li>

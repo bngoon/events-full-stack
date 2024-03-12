@@ -2,6 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import { createEvent } from '../services/events.js'
 import { useNavigate } from 'react-router-dom'
+import "./EventCreate.css"
+
+
 
 function EventCreate() {
   const [events, setEvents] = useState({
