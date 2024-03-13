@@ -43,3 +43,5 @@ Start the frontend development server.
 ## Authors
 
 - [@Bngoon](https://github.com/bngoon)
+
+- Data base provided by Luis (https://github.com/LuisPa98)
