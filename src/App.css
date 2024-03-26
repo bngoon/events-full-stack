@@ -2,6 +2,11 @@
   text-align: center;
   text-transform: capitalize;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .landinghome {
   color: lightgrey;
 }
