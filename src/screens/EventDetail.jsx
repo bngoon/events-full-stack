@@ -21,10 +21,17 @@ function EventDetail() {
     []
   );
 
-  const handleDelete = async () => {
-    await deleteEvent(name);
-    navigate("/events");
+  const handleDelete = async (name) => {
+    const isConfirmed = window.confirm(`Are you sure you want to delete ${name}?`);
+    
+    if (isConfirmed) {
+      
+      await deleteEvent(name);  // Assuming deleteEvent is defined elsewhere
+      navigate("/events");
+    }
   };
+
+
 
   return (
     <div className="event-detail-container">
